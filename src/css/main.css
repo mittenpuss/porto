@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;600;700;800&display=swap');
+
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    /* background-color: #FAF9F7; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Header */
+
+.header-container{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;   
+    background-color: white;
+    color: #868686;
+    font-family: 'Sora',sans-serif;
+}
+
+
+.header-menu-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 16px;
+    font-family: 'Sora',sans-serif;
+}
+
+.header-menu-container > a{
+    text-decoration: none; 
+    list-style-type: none;
+    color: #868686;
+
+}
+
+.header-button{
+    box-sizing: border-box;
+    font-family: 'Sora',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #868686;
+    width: 100px;
+    height: 70%;
+    align-items: center;    
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #868686;
+
+}
+
+/* INTRO */
+
+.intro-container{
+    height: 100vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5vh;
+    text-align: center;
+    align-items: center;
+    font-family: 'Sora', sans-serif;
+}
+
+.intro-h1{
+    margin-top: 3%;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.intro-h2{
+    margin-top: 1.5%;
+    font-size: 2em;
+    font-weight: 400;    
+    line-height: 50px;
+}
+
+.intro-h2 > span{
+    color: #FF8C8C;
+}
+
+.intro-text{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.intro-button{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: #29323D;
+    border-radius: 10px;
+    font-family: 'Sora', sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+.intro-icons{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    }
+
+.intro-icons > a{
+    font-size: 30px;
+    color: #29323D;
+
+}
+
+
+/* CONTACT */
+
+.contact-container{
+    font-family: 'Sora', sans-serif;
+    height: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-left{
+    flex-basis: 30%;
+    text-align: left;
+    text-overflow: clip;
+    margin-left: 5%;
+
+}
+
+.contact-left > h1{
+    padding-bottom: 20px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.contact-left > p{
+    font-size: 1em;
+    font-weight: 400;
+
+}
+
+.contact-right{
+    flex-basis: 70%;
+    text-align: left;
+    /* background-color: red; */
+}
+
+.contact-right > h1{
+    font-size: 1.5em;
+    font-weight: 700;
+ }
+
+
+
+.contact-right-span{
+    color: #FF8C8C;
+}
+
+
+/* FORM */
+
+.input-row{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+
+.input-row-textarea{
+    margin-top: 20px;
+}
+
+/* //FIRST */
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+
+input, select{
+    width: 100%;
+    height: 40px;
+    margin: 2px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid rgb(56, 38, 38);
+    border-radius: 4px;
+    padding-left: 5px;
+}
+
+
+textarea{
+    width: 100%;
+    margin: 2px;
+    resize: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid rgb(56, 38, 38);
+    border-radius: 4px;
+
+}
+
+.form-button{
+    margin-top: 20px;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.9em;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background: #29323D;
+    border-radius: 10px;
+    color: white;
+}
+
+/* //MEDIA PHONE */
+
+@media screen and (max-width: 600px) {
+
+    /* INTRO */
+    .intro-container{
+        height: 100vh;
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 10vh;
+        text-align: center;
+        align-items: center;
+        font-family: 'Sora', sans-serif;
+    }
+    
+    .intro-h1{
+        margin-top: 20px;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    
+    .intro-h2{
+        margin-top: 20px;
+        font-size: 1.2em;
+        font-weight: 400;    
+        line-height: 30px;
+    }
+    
+    .intro-h2 > span{
+        color: #FF8C8C;
+    }
+    
+    .intro-text{
+        font-size: 0.8em;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    br {
+        display: none;
+    }
+    
+    .intro-button{
+        padding-top: -40px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        background: #29323D;
+        border-radius: 10px;
+        font-family: 'Sora', sans-serif;
+        font-size: 1em;
+        color: white;
+    }
+    
+    .intro-icons{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        }
+    
+    .intro-icons > a{
+        font-size: 20px;
+        color: #29323D;
+    }
+
+    /* //CONTACT */
+    .contact-container{
+        font-family: 'Sora', sans-serif;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-left{
+        text-align: center;
+        margin-left: 0;
+    
+    }
+    
+    .contact-left > h1{
+        padding-bottom: 10px;
+        font-size: 2em;
+    }
+    
+    .contact-left > p{
+        font-size: 1em;
+    
+    }
+    
+    .contact-right{
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .contact-right > h1{
+        font-size: 1.2em;
+     }
+    
+    
+    /* FORM */
+    
+    .input-row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* //FIRST */
+
+    .input-row .input-group{
+        padding: 10px;
+        flex-basis: 100%;
+    }
+    
+    input, select{
+        width: 100%;
+        height: 40px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid rgb(56, 38, 38);
+        border-radius: 4px;
+        padding-left: 5px;
+    }
+    
+    
+    textarea{
+        width: 100%;
+        margin: 2px;
+        resize: none;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid rgb(56, 38, 38);
+        border-radius: 4px;
+    
+    }
+
+    .input-row-textarea{
+        margin-top: 5px;
+    }
+    
+    .form-button{
+        margin-top: 20px;
+        font-family: 'Sora', sans-serif;
+        font-size: 0.9em;
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        background: #29323D;
+        border-radius: 10px;
+        color: white;
+    }
+}
