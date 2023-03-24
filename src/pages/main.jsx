@@ -1,26 +1,27 @@
-// import React from 'react';
-// import '../css/main.css'
-// import Card from '@material-ui/core/Card';
-// import CardActionArea from '@material-ui/core/CardActionArea';
-// import CardActions from '@material-ui/core/CardActions';
-// import CardContent from '@material-ui/core/CardContent';
-// import CardMedia from '@material-ui/core/CardMedia';
-// import Typography from '@material-ui/core/Typography';
-// import {FaReact, FaNodeJs} from 'react-icons/fa'
-// import {SiMysql, SiJavascript, SiMaterialUi, SiCss3, SiHtml5, SiOracle, SiGithub, SiInstagram } from 'react-icons/si'
+import React from 'react';
+import '../css/main.css'
 
 import {FaDribbble, FaDiscord, FaTwitter, FaGithub} from "react-icons/fa";
+import { Space, Tag, Card, Image } from 'antd';
+
+//IMAGES
 import Avatar from '../assets/avatar.png'
-import { Image } from 'antd';
+import Kedas from '../assets/projects/kedas.png'
+import Nyentana from '../assets/projects/nyentana.png'
+import TravelU from '../assets/projects/travelU.png'
+import Honkai from '../assets/projects/honkai.png'
+
+const getCV=()=>{
+    window.open(
+        'https://drive.google.com/file/d/1f8vZzXhFhEwZgBuZc7zZFPGwtx4hKdtQ/view?usp=sharing',
+        '_blank' // <- This is what makes it open in a new window.
+      );
+}
+
+
 
 const Main=()=>{
-    const getCV=()=>{
-        window.open(
-            'https://drive.google.com/file/d/1f8vZzXhFhEwZgBuZc7zZFPGwtx4hKdtQ/view?usp=sharing',
-            '_blank' // <- This is what makes it open in a new window.
-          );
-    }
-
+   
     return (
 
             <div>
@@ -36,7 +37,7 @@ const Main=()=>{
                         Get CV
                     </button>
                 </header>
-                
+
                 <div className='intro-container'>
 
                     <Image
@@ -73,7 +74,112 @@ const Main=()=>{
                         </a>
                     </div>
                 </div>
+
+
+                {/* MY PROJECTS */}
+                <div className="projects-container">
+                    <p>Latest Work</p>
+
+                    <div className="projects-box">
+
+                        {/* KEDAS */}
+                        <Card title="E-Commerce Perlengkapan Upakara Bali" bordered={false} className='projects-card' size='small'>
+                            <Image
+                                className='projects-pp'
+                                src={Kedas}
+                                alt='Kedas'
+                                style={{width:'100%', height:'100%'}}
+                            />
+                            <div className="projects-tag">
+                                <Space size={[0, 8]} wrap>
+                                    <Tag color="magenta">Dribbble</Tag>                                
+                                    <Tag color="red">Web Design</Tag>
+                                    <Tag color="volcano">Landing Page</Tag>
+                                    {/* <Tag color="orange">HTML</Tag>
+                                    <Tag color="gold">Javascript</Tag>
+                                    <Tag color="blue">CSS</Tag>                                     */}
+                                </Space>
+                            </div>
+                            <p>Kedas is a platform that connects waste owners with waste recyclers, it's also acts as an e-commerce. Users can buy recycled ceremonial waste, Hindu ceremonial equipment, and Balinese art. This page displays the purchase page for the Hindu prayer equipment.</p>
+                            <button className='form-button'>
+                                see this project!
+                            </button>
+                        </Card>
                         
+                        {/* TRAVELU */}
+                        <Card title="Travel U - Travel Landing Page" bordered={false} className='projects-card' size='small'>
+                            <Image
+                                className='projects-pp'
+                                src={TravelU}
+                                alt='Travel-U'
+                                style={{width:'100%', height:'100%'}}
+                            />
+                            <div className="projects-tag">
+                                <Space size={[0, 8]} wrap>
+                                    {/* <Tag color="magenta">Dribbble</Tag>                                 */}
+                                    <Tag color="red">Web Design</Tag>
+                                    <Tag color="volcano">Landing Page</Tag>
+                                    <Tag color="orange">HTML</Tag>
+                                    <Tag color="gold">Javascript</Tag>
+                                    <Tag color="blue">CSS</Tag>                                    
+                                </Space>
+                            </div>
+                            <p>Landing Page for Traveling website, RevoU Fundamental Course Project. Users can see the top destinations from the travel agent, user review, and how to contact the travel agent</p>
+                            <button className='form-button'>
+                                see this project!
+                            </button>
+                        </Card>
+                        
+                        {/* NYENTANA */}
+                        <Card title="Nyentana Dating Apps" bordered={false} className='projects-card' size='small'>
+                            <Image
+                                className='projects-pp'
+                                src={Nyentana}
+                                alt='Travel-U'
+                                style={{width:'100%', height:'100%'}}
+                            />
+                            <div className="projects-tag">
+                                <Space size={[0, 8]} wrap>
+                                    {/* <Tag color="magenta">Dribbble</Tag>                                 */}
+                                    <Tag color="magenta">Dribbble</Tag>                                
+                                    <Tag color="red">Web Design</Tag>
+                                    <Tag color="volcano">Landing Page</Tag>                                 
+                                </Space>
+                            </div>
+                            <p>I made a landing page for the dating app: Nyentana. Nyentana is a marriage tradition carried out by the Balinese indigenous people in which the bride's party marries the groom's party. It's hard to find people that want to do nyentana, so i made the mockup of the website</p>
+                            <button className='form-button'>
+                                see this project!
+                            </button>
+                        </Card>
+
+                        {/* HONKAI STAR RAILS */}
+                        <Card title="Honkai Star Rails - Character Selections" bordered={false} className='projects-card' size='small'>
+                            <Image
+                                className='projects-pp'
+                                src={Honkai}
+                                alt='Travel-U'
+                                style={{width:'100%', height:'100%'}}
+                            />
+                            <div className="projects-tag">
+                                <Space size={[0, 8]} wrap>
+                                    <Tag color="magenta">Dribbble</Tag>                                
+                                    <Tag color="red">Web Design</Tag>                           
+                                </Space>
+                            </div>
+                            <p>Hoyoverse newest game: Honkai Star Rail! I'm hoyoverse fans, so i remade the Honkai Star Rail character selection page from the website to my liking.</p>
+                            <button className='form-button'>
+                                see this project!
+                            </button>
+                        </Card>
+                      
+
+
+                    </div>
+
+                   
+
+                </div>    
+
                 {/* CONTACT */}
                 <div className='contact-container'>
                     
@@ -151,5 +257,7 @@ const Main=()=>{
                 
     )
 }
+
+
 
 export default Main
