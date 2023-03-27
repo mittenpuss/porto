@@ -1,8 +1,12 @@
 import React from 'react';
-import '../css/main.css'
+import '../css/main.css';
 
-import {FaDribbble, FaDiscord, FaTwitter, FaGithub} from "react-icons/fa";
+import Footer from './footer'
+import Header from './header'
+
 import { Space, Tag, Card, Image } from 'antd';
+import { TypeAnimation } from 'react-type-animation';
+import {Fade, Slide} from 'react-reveal';
 
 //IMAGES
 import Avatar from '../assets/avatar.png'
@@ -10,6 +14,8 @@ import Kedas from '../assets/projects/kedas.png'
 import Nyentana from '../assets/projects/nyentana.png'
 import TravelU from '../assets/projects/travelU.png'
 import Honkai from '../assets/projects/honkai.png'
+
+
 
 const getCV=()=>{
     window.open(
@@ -25,21 +31,11 @@ const Main=()=>{
     return (
 
             <div>
-                <header className='header-container'>
-                    <p>AW</p>
-            
-                    <div className='header-menu-container'>
-                        <a href="#start">Start</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact-me">Contact Me</a>
-                    </div>
-                    <button className='header-button' onClick={getCV}>
-                        Get CV
-                    </button>
-                </header>
+                <Header/>
 
+                
                 <div className='intro-container'>
-
+                
                     <Image
                         className='intro-pp'
                         src={Avatar}
@@ -47,10 +43,25 @@ const Main=()=>{
                         height={140}
                         width={140}
                     />
-                    
-
+                
                     <p className='intro-h1'>Hello, my name is Angga.</p>
-                    <p className='intro-h2'>I could create a <span>web</span> or <span>graphic design</span> <br/>for you.</p><br />
+                    
+                    <p className='intro-h2'>I could create
+                        <TypeAnimation
+                            sequence={[
+                                // Same String at the start will only be typed once, initially
+                                ' website',
+                                1500,
+                                ' graphic design',
+                                1500,
+                                ' UI/UX',
+                                1500,
+                            ]}
+                            speed={40}
+                            repeat={Infinity}
+                        />
+                    </p>
+                    <p className='intro-h3'>for you</p>
                     <p className='intro-text'><b>Currently Seeking a challenging internship or entry-level position <br/>in a dynamic and fast-paced environment.</b></p>
                         
                     <a href="mailto:anggaa_wijaya@yahoo.com">
@@ -59,20 +70,7 @@ const Main=()=>{
                         </button>
                     </a><br/>
 
-                    <div className='intro-icons'>
-                        <a href='https://discord.com/users/346637910721691649' target="_blank" rel="noopener noreferrer">
-                            <FaDiscord/>
-                        </a>
-                        <a href='https://dribbble.com/mittenpuss' target="_blank" rel="noopener noreferrer">
-                            <FaDribbble/>
-                        </a>
-                        <a href='https://github.com/mittenpuss' target="_blank" rel="noopener noreferrer">
-                            <FaGithub/>
-                        </a>
-                        <a href='https://twitter.com/anggaawijaya' target="_blank" rel="noopener noreferrer">
-                            <FaTwitter/>
-                        </a>
-                    </div>
+                    
                 </div>
 
 
@@ -80,6 +78,7 @@ const Main=()=>{
                 <div className="projects-container">
                     <p>Latest Work</p>
 
+                    
                     <div className="projects-box">
 
                         {/* KEDAS */}
@@ -172,12 +171,8 @@ const Main=()=>{
                             </button>
                         </Card>
                       
-
-
                     </div>
-
-                   
-
+        
                 </div>    
 
                 {/* CONTACT */}
@@ -191,7 +186,7 @@ const Main=()=>{
 
                     {/* CONTACT RIGHT */}
                     <div className='contact-right'>
-                        <h1>I craft awesome design solutions for you. Let’s message me and make <span className='contact-right-span'>something together!</span></h1>
+                        <h1>Do you have a project in mind? Want to hire me? or simply wanna chat? Message me and let's make <span className='contact-right-span'>something together!</span></h1>
                         
                         <form>
                             <div className='input-row'>
@@ -243,15 +238,14 @@ const Main=()=>{
                   
                         </form>
 
-                        
-
                     </div>
-
-
-
                 </div>
 
-                </div>
+            {/* FOOTER */}
+            <Footer/>
+
+
+            </div>
 
             
                 

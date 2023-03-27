@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sora:wght@100;200;300;400;600;700;800&display=swap');
+
 
 /* CSS RESET */
 
@@ -48,61 +49,6 @@ table {
 }
 
 
-
-/* Header */
-
-.header-container{
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    padding-left: 15%;
-    padding-right: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;   
-    background-color: white;
-    color: #868686;
-    font-family: 'Sora',sans-serif;
-}
-
-
-.header-menu-container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    font-size: 16px;
-    font-family: 'Sora',sans-serif;
-}
-
-.header-menu-container > a{
-    text-decoration: none; 
-    list-style-type: none;
-    color: #868686;
-
-}
-
-.header-button{
-    box-sizing: border-box;
-    font-family: 'Sora',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    border-radius: 10px;
-    border: 1px solid #868686;
-    width: 100px;
-    height: 70%;
-    align-items: center;    
-    background-color: transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    color: #868686;
-
-}
-
 /* INTRO */
 
 .intro-container{
@@ -126,6 +72,11 @@ table {
     font-size: 2em;
     font-weight: 400;    
     line-height: 50px;
+}
+
+.intro-h3{
+    font-size: 2em;
+    font-weight: 400; 
 }
 
 .intro-h2 > span{
@@ -172,9 +123,18 @@ table {
     height: 100%;
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     font-family: 'Sora', sans-serif
 }
+
+.projects-container > p:first-of-type{
+    font-size: 3em;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-align: center;
+    /* color: rgb(121, 121, 121); */
+}
+
 
 .projects-box{
     /* background-color: red; */
@@ -193,13 +153,6 @@ table {
     /* border: solid 1px black; */
 }
 
-.projects-container > p:first-of-type{
-    font-size: 3em;
-    font-weight: 700;
-    padding-bottom: 20px;
-    text-align: center;
-    /* color: rgb(121, 121, 121); */
-}
 
 .projects-tag{
     margin-top: 10px;
@@ -243,7 +196,7 @@ table {
     text-align: left;
     text-overflow: clip;
     margin-left: 5%;
-
+    text-align: center;
 }
 
 .contact-left > h1{
@@ -331,6 +284,8 @@ textarea{
     color: white;
 }
 
+
+
 /* //MEDIA PHONE */
 
 @media screen and (max-width: 600px) {
@@ -362,6 +317,10 @@ textarea{
     .intro-h2 > span{
         color: #FF8C8C;
     }
+
+    .intro-h3{
+        font-size: 1.2em;
+    }
     
     .intro-text{
         font-size: 0.8em;
@@ -385,19 +344,7 @@ textarea{
         color: white;
     }
     
-    .intro-icons{
-        padding-top: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-        }
-    
-    .intro-icons > a{
-        font-size: 20px;
-        color: #29323D;
-    }
-
+  
     /* MY PROJECTS */
 
     .projects-container{
@@ -490,7 +437,7 @@ textarea{
     }
     
     .contact-right > h1{
-        font-size: 1.2em;
+        font-size: 1.1em;
      }
     
     

@@ -1,0 +1,28 @@
+/* FOOTER */
+
+
+.footer-container{
+    height: auto;
+}
+
+.footer-icons{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    }
+
+
+.footer-icons > a{
+    font-size: 30px;
+    color: #29323D;
+}
+
+.footer-copyright{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+}
