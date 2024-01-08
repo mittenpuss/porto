@@ -1,0 +1,16 @@
+.intro-button{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background: #29323D;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: 'Sora', sans-serif;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    text-decoration: none;
+
+}

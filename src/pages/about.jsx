@@ -1,6 +1,8 @@
 import React from 'react';
 import '../css/about.css'
 
+import { useNavigate } from 'react-router-dom'
+
 import Footer from './footer';
 import Header from './header';
 import Avatar from '../assets/avatar.png';
@@ -9,19 +11,18 @@ import { Divider, Image, Tag, Space } from 'antd'
 
 
 const About=()=>{
-
-    const getCV=()=>{
-        window.open(
-            'https://drive.google.com/file/d/1f8vZzXhFhEwZgBuZc7zZFPGwtx4hKdtQ/view?usp=sharing',
-            '_blank' // <- This is what makes it open in a new window.
-          );
-    }
-
+   
+    const navigate = useNavigate()
 
     return (
-    <div style={{marginRight:'15%', marginLeft:'15%'}}>
+    <div>
         <Header/>
-        <h1 className='about-title'>About</h1>
+
+        <div style={{marginRight:'15%', marginLeft:'15%'}}>
+
+        <Divider className='about-divider'/>
+
+        <h1 className='about-title'>About me</h1>
         <Divider className='about-divider'/>
         
         <div className='about-container'>
@@ -47,9 +48,13 @@ const About=()=>{
                 <br />
                 <p className='about-text'>Seeking a challenging internship or entry-level position in a dynamic and fast-paced environment.</p> 
                 <br />
-                <button className='about-button' onClick={getCV}>
-                        Get CV
-                </button>
+
+                <div style={{display:'flex'}}>
+                    <button className='cv-button' onClick={()=> navigate('/my-cv/')} >
+                        Get my CV
+                    </button>
+                </div>
+    
 
                 <h1 className='about-skills'>Skills</h1>
                 <div>
@@ -66,7 +71,7 @@ const About=()=>{
             </div>
       
         </div>
-
+    </div>
         <Footer/>
     </div>
     
