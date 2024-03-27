@@ -64,7 +64,8 @@ function Navbar() {
 				<a onClick={()=> navigate('/projects')}>My work</a>
 				<a href="https://anggaawijaya.wordpress.com/" target='blank' attribute >Blog</a>
 				<a onClick={()=> navigate('/about')} >About me</a>
-				<a onClick={()=> navigate('/contact')} >My Contact</a>
+				<a href='https://wa.me/6281236046472?text=I%27m%20interested%20to%20collaborate%20with%20you'
+                            target='blank' >My Contact</a>
 
 				<button
 					className="nav-btn nav-close-btn"

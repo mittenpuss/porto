@@ -46,7 +46,7 @@ const About=()=>{
                 <br />
                 <p className='about-text'>Experienced in web development and agile development methodologies. Skilled in developing and implementing technical solutions to complex problems, focusing on user experience and performance. </p>
                 <br />
-                <p className='about-text'>Seeking a challenging internship or entry-level position in a dynamic and fast-paced environment.</p> 
+                <p className='about-text'>Currently working at Perum Peruri in HR Management System Planning and Development Section. If you are looking to collaborate, please do contact me!</p> 
                 <br />
 
                 <div style={{display:'flex'}}>
@@ -62,9 +62,13 @@ const About=()=>{
                     <Tag color="magenta">Figma</Tag>                                
                     <Tag color='cyan'>React JS</Tag>
                     <Tag color='geekblue'>React Native</Tag>
-                    <Tag color='geekblue'>mySQL</Tag>
-                    <Tag color='geekblue'>AWS</Tag>
-                    <Tag color='geekblue'>SCRUM</Tag>
+                    <Tag color="gold">Javascript</Tag>
+                    <Tag color="orange">HTML</Tag>
+                    <Tag color="blue">CSS</Tag>
+                    <Tag color="green">mySQL</Tag>
+                    <Tag color='volcano'>AWS</Tag>
+                    <Tag color='yellow'>SCRUM</Tag>                                   
+
                 </Space>
                 </div>
 

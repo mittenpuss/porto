@@ -25,7 +25,7 @@ const Footer=()=>{
                         </a>
                         <br />
             </div>
-            <p className='footer-copyright'><FaRegCopyright/> 2023 Dewa Gede Angga Wijaya </p>  
+            <p className='footer-copyright'><FaRegCopyright/> 2024 Dewa Gede Angga Wijaya </p>  
         </div>
     )
 }

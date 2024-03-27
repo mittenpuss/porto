@@ -65,12 +65,15 @@ const Main=()=>{
                         />
                     </p>
                     <p className='intro-h3'>for you</p>
-                    <p className='intro-text'><b>Currently Seeking a challenging internship or entry-level position <br/>in a dynamic and fast-paced environment.</b></p>
+                    <p className='intro-text'><b>Currently working at Perum Peruri in HR Management System Planning and<br/> Development Section. If you are looking to collaborate, please do contact me!</b></p>
                         
                     
                     <div>
                         <button className='intro-button'>
-                            <a onClick={()=> navigate('/contact')}>
+                            <a 
+                            href='https://wa.me/6281236046472?text=I%27m%20interested%20to%20collaborate%20with%20you'
+                            target='blank'
+                            >
                                 Get in Touch
                             </a><br/>
                         </button>

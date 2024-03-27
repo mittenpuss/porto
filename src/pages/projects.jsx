@@ -18,7 +18,7 @@ import Nyentana from '../assets/projects/nyentana.png'
 import TravelU from '../assets/projects/travelU.png'
 import Honkai from '../assets/projects/honkai.png'
 import TupoksiPeruri from "../assets/projects/tupoksiPeruri.png"
-
+import RekrutmenPeruri from "../assets/projects/rekrutmenPeruri.png"
 
 const Work=()=>{
    
@@ -65,6 +65,30 @@ const Work=()=>{
                                 </Space>
                             </div>
                             <p>SKEP and TUPOKSI Peruri is a system for employees to see the main duties and responsibilities of each division and the decrees that are currently in effect.</p>
+                            <button className='form-button'>
+                                see this project!
+                            </button>
+                        </Card>
+
+                        {/* Rekrutmen Peruri */}
+                        <Card title="Sistem Rekrutmen Peruri" bordered={false} className='projects-card' size='small'>
+                            <Image
+                                className='projects-pp'
+                                src={RekrutmenPeruri}
+                                alt='Tupoksi'
+                                style={{width:'100%', height:'100%'}}
+                            />
+                            <div className="projects-tag">
+                                <Space size={[0, 8]} wrap>                               
+                                    <Tag color="magenta">Dribbble</Tag>                                
+                                    <Tag color="red">Web Design</Tag>
+                                    <Tag color="volcano">Landing Page</Tag>
+                                    {/* <Tag color="orange">HTML</Tag>
+                                    <Tag color="gold">Javascript</Tag>
+                                    <Tag color="blue">CSS</Tag>*/}
+                                </Space>
+                            </div>
+                            <p>It's an recruitment system, where candidate can apply for job openings.</p>
                             <button className='form-button'>
                                 see this project!
                             </button>
@@ -136,7 +160,11 @@ const Work=()=>{
                             </div>
                             <p>I made a landing page for the dating app: Nyentana. Nyentana is a marriage tradition carried out by the Balinese indigenous people in which the bride's party marries the groom's party. It's hard to find people that want to do nyentana, so i made the mockup of the website</p>
                             <button className='form-button'>
+                                <a href='' >
+
                                 see this project!
+
+                                </a>
                             </button>
                         </Card>
 

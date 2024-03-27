@@ -48,7 +48,7 @@ const Contact=()=>{
 
                             <div className='input-row'>
                                 <div className="input-group">
-                                    <label htmlFor="email">Your Email (required)</label>
+                                    <label htmlFor="email">Your Email</label>
                                 
                                     <input id='email' type="text" placeholder='Your Email' className='form-email'/>
                                 </div>

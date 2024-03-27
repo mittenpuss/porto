@@ -103,6 +103,9 @@ table {
     border-radius: 10px;
     font-family: 'Sora', sans-serif;
     font-size: 1em;
+}
+
+.intro-button a{
     color: white;
     cursor: pointer;
     overflow: hidden;
