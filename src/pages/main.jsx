@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 
 import { Space, Tag, Card, Image } from 'antd';
 import { TypeAnimation } from 'react-type-animation';
-import {Fade, Slide} from 'react-reveal';
+// import {Fade, Slide} from 'react-reveal';
 
 //IMAGES
 import Avatar from '../assets/avatar.png'
