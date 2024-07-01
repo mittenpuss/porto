@@ -4,9 +4,9 @@ import '../css/myCV.css';
 import Header  from '../pages/header';
 
 import { useNavigate } from 'react-router-dom'
-import CV from '../assets/cv-new-2023.png'
+import CV from '../assets/cv-new-2024.png'
 
-import getmyCV from "../assets/anggawijaya-cv-pdf.pdf"
+import getmyCV from "../assets/anggawijaya-cv.pdf"
 
 const MyCV=()=>{
 
