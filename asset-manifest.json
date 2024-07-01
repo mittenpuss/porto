@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/porto/static/css/main.55908417.css",
-    "main.js": "/porto/static/js/main.5181cf83.js",
+    "main.js": "/porto/static/js/main.0f06be6b.js",
     "static/js/787.9d94efd0.chunk.js": "/porto/static/js/787.9d94efd0.chunk.js",
     "static/media/batch-certificate.pdf": "/porto/static/media/batch-certificate.f9f43eada2fccdfb9963.pdf",
     "static/media/kedas.png": "/porto/static/media/kedas.ee4d682fa9bcf72d2b00.png",
     "static/media/honkai.png": "/porto/static/media/honkai.0d9b9d3836ec071a46d4.png",
     "static/media/nyentana.png": "/porto/static/media/nyentana.e577e461420a10e17ebd.png",
+    "static/media/anggawijaya-cv.pdf": "/porto/static/media/anggawijaya-cv.45eea0afca7cc72863c4.pdf",
     "static/media/cv-new-2024.png": "/porto/static/media/cv-new-2024.bcb1dffd8688a36108ed.png",
     "static/media/avatar.png": "/porto/static/media/avatar.d4ad6d2299041ae95e33.png",
-    "static/media/anggawijaya-cv.pdf": "/porto/static/media/anggawijaya-cv.be67467fda1b1ca43a2b.pdf",
     "static/media/rekrutmenPeruri.png": "/porto/static/media/rekrutmenPeruri.be07a23f9934fe336fa8.png",
     "static/media/travelU.png": "/porto/static/media/travelU.e4bf28c7a8a0fcce4d15.png",
     "static/media/tupoksiPeruri.png": "/porto/static/media/tupoksiPeruri.253d771670219e381f90.png",
     "index.html": "/porto/index.html",
     "main.55908417.css.map": "/porto/static/css/main.55908417.css.map",
-    "main.5181cf83.js.map": "/porto/static/js/main.5181cf83.js.map",
+    "main.0f06be6b.js.map": "/porto/static/js/main.0f06be6b.js.map",
     "787.9d94efd0.chunk.js.map": "/porto/static/js/787.9d94efd0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55908417.css",
-    "static/js/main.5181cf83.js"
+    "static/js/main.0f06be6b.js"
   ]
 }
