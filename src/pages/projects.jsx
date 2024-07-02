@@ -19,6 +19,7 @@ import TravelU from '../assets/projects/travelU.png'
 import Honkai from '../assets/projects/honkai.png'
 import TupoksiPeruri from "../assets/projects/tupoksiPeruri.png"
 import RekrutmenPeruri from "../assets/projects/rekrutmenPeruri.png"
+import AsesmenPeruri from "../assets/projects/asesmenPeruri.png"
 
 const Work=()=>{
    
@@ -28,7 +29,6 @@ const Work=()=>{
 
             <div>
             <NavBar/>
-
 
                 <div style={{marginRight:'15%', marginLeft:'15%'}}>
                     <Divider className='about-divider'/>
@@ -41,6 +41,29 @@ const Work=()=>{
                     
                     <div className="projects-box">
 
+                        {/*  */}
+                        <Card title="Sistem Pengelolaan Data Asesmen" bordered={false} className='projects-card' size='small'>
+                            <Image
+                                className='projects-pp'
+                                src={AsesmenPeruri}
+                                alt='Asesmen'
+                                style={{width:'100%', height:'100%'}}
+                            />
+                            <div className="projects-tag">
+                                <Space size={[0, 8]} wrap>                               
+                                    <Tag color="magenta">Dribbble</Tag>                                
+                                    <Tag color="red">Web Design</Tag>
+                                    
+                                    {/* <Tag color="orange">HTML</Tag>
+                                    <Tag color="gold">Javascript</Tag>
+                                    <Tag color="blue">CSS</Tag>*/}
+                                </Space>
+                            </div>
+                            <p>The system aims to make the process of managing employee assessment data at Peruri more efficient, accurate, and informative.</p>
+                            <button className='form-button'>
+                                see this project!
+                            </button>
+                        </Card>
 
                         {/* SKEP DAN TUPOKSI PERURI */}
                         <Card title="SKEP dan Tupoksi Peruri" bordered={false} className='projects-card' size='small'>

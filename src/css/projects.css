@@ -87,6 +87,11 @@
   
     /* MY PROJECTS */
 
+    .projects-title{
+        font-size: 2em;
+        font-weight: 800;
+    }
+
     .projects-container{
         height: 100%;
         margin-left: 0%;
