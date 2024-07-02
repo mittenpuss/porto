@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/porto/static/css/main.55908417.css",
-    "main.js": "/porto/static/js/main.0f06be6b.js",
+    "main.css": "/porto/static/css/main.e5dbd849.css",
+    "main.js": "/porto/static/js/main.35ce5ab4.js",
     "static/js/787.9d94efd0.chunk.js": "/porto/static/js/787.9d94efd0.chunk.js",
     "static/media/batch-certificate.pdf": "/porto/static/media/batch-certificate.f9f43eada2fccdfb9963.pdf",
     "static/media/kedas.png": "/porto/static/media/kedas.ee4d682fa9bcf72d2b00.png",
@@ -12,14 +12,15 @@
     "static/media/avatar.png": "/porto/static/media/avatar.d4ad6d2299041ae95e33.png",
     "static/media/rekrutmenPeruri.png": "/porto/static/media/rekrutmenPeruri.be07a23f9934fe336fa8.png",
     "static/media/travelU.png": "/porto/static/media/travelU.e4bf28c7a8a0fcce4d15.png",
+    "static/media/asesmenPeruri.png": "/porto/static/media/asesmenPeruri.07360b703f143f6ac5af.png",
     "static/media/tupoksiPeruri.png": "/porto/static/media/tupoksiPeruri.253d771670219e381f90.png",
     "index.html": "/porto/index.html",
-    "main.55908417.css.map": "/porto/static/css/main.55908417.css.map",
-    "main.0f06be6b.js.map": "/porto/static/js/main.0f06be6b.js.map",
+    "main.e5dbd849.css.map": "/porto/static/css/main.e5dbd849.css.map",
+    "main.35ce5ab4.js.map": "/porto/static/js/main.35ce5ab4.js.map",
     "787.9d94efd0.chunk.js.map": "/porto/static/js/787.9d94efd0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55908417.css",
-    "static/js/main.0f06be6b.js"
+    "static/css/main.e5dbd849.css",
+    "static/js/main.35ce5ab4.js"
   ]
 }
